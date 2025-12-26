@@ -1,0 +1,20 @@
+Start test: x (20251214_155818)
+File: cmake-build-release/catch2test/catch2tests
+
+--- Size ---
+1496024 bytes
+
+--- Memory (Bytes) ---
+12881920
+Stats Mem:
+Peak: 12881920 Bytes
+
+--- Time (Average) ---
+0.0010444
+
+
+alexey@alexey:~/projects/testrep/simpleson$ hyperfine --runs 10 --warmup 2  --prepare "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/simpleson/cmake-build-release --target clean" "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/simpleson/cmake-build-release --target all -j 26"
+Benchmark 1: /home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/simpleson/cmake-build-release --target all -j 26
+  Time (mean ± σ):      3.539 s ±  0.128 s    [User: 49.857 s, System: 4.162 s]
+  Range (min … max):    3.358 s …  3.728 s    10 runs
+

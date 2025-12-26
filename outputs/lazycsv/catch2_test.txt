@@ -1,0 +1,18 @@
+Start test: x (20251214_154146)
+File: cmake-build-release/catch2test/main_test
+
+--- Size ---
+1264368 bytes
+
+--- Memory (Bytes) ---
+12705792
+Stats Mem:
+Peak: 12705792 Bytes
+
+--- Time (Average) ---
+0.00089689
+
+alexey@alexey:~/projects/testrep/lazycsv$ hyperfine --runs 10 --warmup 2  --prepare "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/lazycsv/cmake-build-release --target clean" "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/lazycsv/cmake-build-release --target all -j 26"
+Benchmark 1: /home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/lazycsv/cmake-build-release --target all -j 26
+  Time (mean ± σ):      3.369 s ±  0.087 s    [User: 42.341 s, System: 3.615 s]
+  Range (min … max):    3.242 s …  3.482 s    10 runs

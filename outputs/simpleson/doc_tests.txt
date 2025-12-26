@@ -1,0 +1,21 @@
+
+Start test: x (20251214_155719)
+File: cmake-build-release/doctest/all_doctest_tests
+
+--- Size ---
+518128 bytes
+
+--- Memory (Bytes) ---
+12017664
+Stats Mem:
+Peak: 12017664 Bytes
+
+--- Time (Average) ---
+0.00078911
+
+
+
+alexey@alexey:~/projects/testrep/simpleson$ hyperfine --runs 10 --warmup 2  --prepare "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/simpleson/cmake-build-release --target clean" "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/simpleson/cmake-build-release --target all -j 26"
+Benchmark 1: /home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/simpleson/cmake-build-release --target all -j 26
+  Time (mean ± σ):      2.131 s ±  0.047 s    [User: 7.240 s, System: 0.480 s]
+  Range (min … max):    2.070 s …  2.205 s    10 runs

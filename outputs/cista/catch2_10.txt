@@ -1,0 +1,20 @@
+Start test: x (20251214_150455)
+File: cmake-build-release/catch2test/cista-test-catch2
+
+--- Size ---
+3349192 bytes
+
+--- Memory (Bytes) ---
+1188904960
+Stats Mem:
+Peak: 1188904960 Bytes
+
+--- Time (Average) ---
+0.6967
+
+
+alexey@alexey:~/projects/testrep/cista$ hyperfine --runs 10  --prepare "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/cista/cmake-build-release --target clean"   "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/cista/cmake-build-release --target all -j 26"
+Benchmark 1: /home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/cista/cmake-build-release --target all -j 26
+  Time (mean ± σ):      6.652 s ±  0.179 s    [User: 122.888 s, System: 8.386 s]
+  Range (min … max):    6.372 s …  6.884 s    10 runs
+

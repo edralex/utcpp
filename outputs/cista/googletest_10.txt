@@ -1,0 +1,21 @@
+Start test: x (20251214_150558)
+File: cmake-build-release/googletest/cista-gtest-single-header
+
+--- Size ---
+3252848 bytes
+
+--- Memory (Bytes) ---
+1188585472
+Stats Mem:
+Peak: 1188585472 Bytes
+
+--- Time (Average) ---
+0.6315
+
+
+alexey@alexey:~/projects/testrep/cista$ hyperfine --runs 10  --prepare "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/cista/cmake-build-release --target clean"   "/home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/te
+strep/cista/cmake-build-release --target all -j 26"
+Benchmark 1: /home/alexey/clion-2025.1/bin/cmake/linux/x64/bin/cmake --build /home/alexey/projects/testrep/cista/cmake-build-release --target all -j 26
+  Time (mean ± σ):      6.480 s ±  0.145 s    [User: 103.265 s, System: 6.364 s]
+  Range (min … max):    6.273 s …  6.734 s    10 runs
+
